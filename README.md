@@ -63,27 +63,27 @@ THEN I am able to successfully create, update, and delete data in my database
 
 ```MySQL create Database```
 
- <img src="./assets/img/MySQL.png" width="300">
+ <img src="./assets/img/MySQL.PNG" width="300">
 
 ```Seed the Database```
 
- <img src="./assets/img/Seeds.png" width="300">
+ <img src="./assets/img/Seeds.PNG" width="300">
 
 ```Initialize Server```
 
- <img src="./assets/img/Server.png" width="300">
+ <img src="./assets/img/Server.PNG" width="300">
 
 ```Categories in Insomnia```
 
- <img src="./assets/img/Categories.png" width="300">
+ <img src="./assets/img/Categories.PNG" width="300">
 
 ```Products in Insomnia```
 
- <img src="./assets/img/Products.png" width="300">
+ <img src="./assets/img/Products.PNG" width="300">
 
 ```Tags in Insomnia```
 
- <img src="./assets/img/Tags.png" width="300">
+ <img src="./assets/img/Tags.PNG" width="300">
 
   ## Links
 

@@ -18,6 +18,7 @@ router.get('/', (req, res) => {
       }
     ]
   })
+
   .then(Data => res.json(Data))
   .catch(err => {
     console.log(err);
@@ -29,13 +30,16 @@ router.get('/:id', (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
   Category.findOne({
+
     where: {
       id: req.params.id
     },
+
     attributes: [
       'id', 
       'category_name'
     ],
+
     include: [
       {
         model: Product,
@@ -43,12 +47,14 @@ router.get('/:id', (req, res) => {
       }
     ]
   })
+
   .then(Data => {
     if (!Data) {
-      res.status(404).json({ message: 'No Category found with this id! '});
+      res.status(404).json({ message: 'No Category ID found'});
       return;
     }
     res.json(Data);
+
   })
   .catch(err => {
     console.log(err);
@@ -60,8 +66,10 @@ router.post('/', (req, res) => {
   // create a new category
   Category.create({
     category_name: req.body.category_name
+
   })
   .then(Data => res.json(Data))
+
   .catch(err => {
     console.log(err);
     res.status(500).json(err);
@@ -82,7 +90,7 @@ router.put('/:id', (req, res) => {
   )
     .then(Data => {
       if (!Data) {
-        res.status(404).json({ message: 'No Category found with this id, so category name update could not be completed' });
+        res.status(404).json({ message: 'No Category ID found, not updated' });
         return;
       }
       res.json(Data);
@@ -102,7 +110,7 @@ router.delete('/:id', (req, res) => {
   })
     .then(Data => {
       if (!Data) {
-        res.status(404).json({ message: 'No Category found with this id' });
+        res.status(404).json({ message: 'No Category ID found, not deleted' });
         return;
       }
       res.json(Data);

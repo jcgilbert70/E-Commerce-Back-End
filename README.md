@@ -88,7 +88,8 @@ THEN I am able to successfully create, update, and delete data in my database
   ## Links
 
   Video Demo: 
-  https://app.castify.com/watch/38bc4006-cf4a-4fbc-a6e3-369a80b085cd
+  https://app.castify.com/view/38bc4006-cf4a-4fbc-a6e3-369a80b085cd
+
 
   Repository: 
   https://github.com/jcgilbert70/E-Commerce-Back-End.git
